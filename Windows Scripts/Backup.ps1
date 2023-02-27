@@ -10,4 +10,4 @@ $Backupfolderpath = "E:\backup\$username"
 # Copy User Data
 copy-item -path "$usernameprofilepath" -Destination $Backupfolderpath
 
-$Logmessage = "$(get-date) Backup of $username data is complete"
+Logmessage = "$(get-date) Backup of $username data is complete"
