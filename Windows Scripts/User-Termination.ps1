@@ -1,5 +1,11 @@
-# Prompt the user for the username
+# Ask for a username
 $Username = Read-Host "Enter the username to delete"
 
-# Remove the user account
-Remove-LocalUser -Name $Username
+# Check for user
+if ($null -eq $Username) {
+    Write-host "Useraccount does not exist"
+}
+else {
+    Remove-LocalUser -Name $Username
+    Write-Host "User account was removed"
+}
