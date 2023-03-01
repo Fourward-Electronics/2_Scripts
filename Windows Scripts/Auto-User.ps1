@@ -14,5 +14,3 @@ else {
     New-LocalUser -Name $Username -Password $Password -FullName $FullName -Description $Description
     Write-Host "User account created successfully"
 }
-# Create the new user account
-New-LocalUser -Name $Username -Password $Password -FullName $FullName -Description $Description
