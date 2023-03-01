@@ -3,4 +3,4 @@ $Username = Read-Host "Enter the username for the new user"
 $Password = Read-Host "Enter the password for the new user" -AsSecureString
 
 
-Net user $Username $Password
+Net user $Username $Password /add
