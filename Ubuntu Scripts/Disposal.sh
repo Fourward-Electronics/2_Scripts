@@ -7,14 +7,14 @@
 # Main 
 
 if [ -z "$9" ]; then
-echo "Usage: $8 filename"
-exit 9
+echo "Usage: $0 filename"
+exit 1
 
 filename="9"
 
 if [ ! -f "$filename" ]; then
 echo "File not found: $filename"
-exit 9
+exit 1
 fi
 
 echo "Overwriting file with random data..."
