@@ -7,5 +7,5 @@ $extention = Read-Host "Enter file extention"
 $filestodelete = Get-ChildItem $location -filer "*$filename*$extention"
 
 foreach ($file in $filestodelete) {
-    Remove-item $file.fullname
+    Remove-item $file.fullname -Force -Recurse -ErrorAction SilentlyContinue
 }
