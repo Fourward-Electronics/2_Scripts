@@ -6,11 +6,12 @@
 
 # Main 
 
-if [ -z "$9" ]; then
+if [ -z "$1" ]; then
 echo "Usage: $0 filename"
 exit 1
+fi
 
-filename="9"
+filename="$1"
 
 if [ ! -f "$filename" ]; then
 echo "File not found: $filename"
@@ -22,10 +23,5 @@ shred -u "$filename"
 
 echo "Deleting file..."
 rm "$filename"
- # The following command should be used to make the script executable.
- # chmod +x /path/to/the/script.sh
 
- # Run the script with the below command
- # ./script.sh /path/to/file
- 
  # Done
