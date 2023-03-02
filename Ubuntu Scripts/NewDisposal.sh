@@ -9,8 +9,8 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 # Ask user for file or directory to be disposed
-echo "dir1: "
-read filename
+echo "please dispose filename: "
+read $dir1
 
 # Check if the file or directory exists
 if [ ! -e "$dir1" ]; then
