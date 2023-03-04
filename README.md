@@ -1,16 +1,15 @@
-# Scripts
-
+Team Roster:
 - Anthony Wall 
 - Dericus Horner 
 - Paul Stroud 
 - Sierra Maldonado
 
-Our Scripts:
+## Our Scripts:
 
-## PowerShell
+### PowerShell
 
 
-RDP.ps1 =  grants the user when they log in Remote access capabilities
+RDP.ps1 =  enables Remote Desktop Protocol
 
 
 File-Delete.ps1 = Securely deletes files
@@ -19,20 +18,21 @@ File-Delete.ps1 = Securely deletes files
 Map net drive.xml = maps the file share to network drive on users computer at logon
 
 
-delete_user.bat = removes user account from system
+new_user.bat = adds new user to the system
 
 
-file_bkp.bat = backs up users computer
+delete_user.bat = removes user account from the system
 
 
-new_user.bat = adds new user to company network
+file_bkp.bat = backs up users files to the network share
 
 
-## Bash
+
+
+### Bash
 
 
 encrypted file backup.sh = backup file to an encrypted external drive
 
-
-NewDisposal.sh = disposes files in ubuntu
+NewDisposal.sh = securely deletes files in Ubuntu
 
